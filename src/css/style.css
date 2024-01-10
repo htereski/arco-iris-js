@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rammetto+One&display=swap');
 
 :root {
@@ -16,7 +17,7 @@
     --bg-violeta: purple;
     --hover-violeta: rgb(128, 0, 128, 0.7);
 
-    --bg-body: linear-gradient(to right top, #d16ba5, #c777b9, #ba83ca, #aa8fd8, #9a9ae1, #8aa7ec, #79b3f4, #69bff8, #52cffe, #41dfff, #46eefa, #5ffbf1);
+    --bg-body: linear-gradient(to right bottom, #dd8cba, #d290c8, #c496d3, #b39bdd, #a1a1e3, #96a5e7, #8ba8eb, #7eaced, #78aff1, #70b2f4, #68b5f8, #5fb8fb);
 
     --font-base: 'Rammetto One', sans-serif;;
 }
@@ -28,13 +29,85 @@
 }
 
 body {
-    background-image: var(--bg-body);
+    background-image: linear-gradient(to right bottom, #dd8cba, #d290c8, #c496d3, #b39bdd, #a1a1e3, #96a5e7, #8ba8eb, #7eaced, #78aff1, #70b2f4, #68b5f8, #5fb8fb);
     height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    height: 100%;
+}
+
+.logo {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    background-color: white;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: var(--font-base);
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+header {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+}
+
+h1 {
+    font-size: 40px;
     color: white;
+    font-weight: 400;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+main div {
+    width: 80%;
+    background-color: white;
+    border-radius: 5px;
+}
+
+main div ul {
+    padding: 30px;
+    font-size: 24px;
+    font-weight: bold;
+    list-style-position: inside;
+    font-weight: 600;
+}
+
+::marker {
+    content: '🎮';
+}
+
+main div p {
+    padding: 0 30px 30px 30px;
+    font-size: 18px;
+    text-align: justify;
+    font-style: italic;
+    font-weight: 300;
+}
+
+@media(max-width: 768px) {
+    main div {
+        width: 90%;
+    }
+}
+
+@media(max-width: 576px) {
+    main div {
+        width: 97%;
+    }
 }
 
 .won {
@@ -43,6 +116,8 @@ body {
     font-size: 36px;
     padding-bottom: 50px;
     opacity: 0;
+    background-color: transparent;
+    text-align: center;
 }
 
 .won-text {
@@ -69,10 +144,11 @@ body {
 
 .container, .labels  {
     height: 20vh;
-    width: 50%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: transparent;
 }
 
 .labels {
@@ -85,10 +161,12 @@ body {
     justify-content: center;
     align-items: center;
     height: 80vh;
-    width: 100%;
+    width: 80%;
+    background-color: transparent;
 }
 
 .label {
+    background-color: transparent;
     width: 80px;
     text-align: center;
     font-size: 20px;

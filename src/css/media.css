@@ -2,14 +2,14 @@
     .labels {
         padding-bottom: 30px;
     }
-    
-    .container, .labels {
-        width: 80%;
-    }
 }
 
 
 @media(max-width: 768px) {
+    .box {
+        width: 90%;
+    }
+
     .container, .labels {
         width: 99%;
     }
@@ -20,5 +20,9 @@
         gap: 10px;
         height: 40px;
         width: 50px;
+    }
+
+    .box {
+        width: 97%;
     }
 }
