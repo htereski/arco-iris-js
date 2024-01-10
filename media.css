@@ -1,0 +1,24 @@
+@media(max-width: 1200px) {
+    .labels {
+        padding-bottom: 30px;
+    }
+    
+    .container, .labels {
+        width: 80%;
+    }
+}
+
+
+@media(max-width: 768px) {
+    .container, .labels {
+        width: 99%;
+    }
+}
+
+@media(max-width: 576px) {
+    .rainbow {
+        gap: 10px;
+        height: 40px;
+        width: 50px;
+    }
+}
